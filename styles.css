@@ -1,0 +1,153 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444;
+}
+
+header .logo h1 {
+  font-size: 2.5rem;
+  color: #4CAF50;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #4CAF50;
+  border-bottom: 2px solid #4CAF50;
+}
+
+main {
+  padding: 3rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.command-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.command {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.command:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.command h3 {
+  font-size: 1.5rem;
+  color: #4CAF50;
+  margin-bottom: 1rem;
+}
+
+.command p {
+  color: #ccc;
+}
+
+.manual-content ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.manual-content li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.code-block {
+  background-color: #282c34;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+pre code {
+  color: #f5f5f5;
+  font-size: 1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header .logo h1 {
+    font-size: 2rem;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .command-container {
+    grid-template-columns: 1fr;
+  }
+}
