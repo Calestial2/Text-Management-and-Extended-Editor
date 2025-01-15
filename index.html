@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Txtmax - Advanced Text Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Txtmax</h1>
+      <p>Advanced, Lightweight, and Open-Source Text Editor</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#commands">Commands</a></li>
+        <li><a href="#manual">Manual</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="commands" class="section">
+      <h2>Txtmax Commands</h2>
+      <div class="command-container">
+        <div class="command">
+          <h3>help</h3>
+          <p>List all available commands.</p>
+        </div>
+        <div class="command">
+          <h3>create <code>&lt;filename&gt;</code></h3>
+          <p>Create a new file, type code in 70 languages, save and quit with :wq.</p>
+        </div>
+        <div class="command">
+          <h3>view <code>&lt;filename&gt;</code></h3>
+          <p>View the contents of a file with syntax highlighting.</p>
+        </div>
+        <div class="command">
+          <h3>edit <code>&lt;filename&gt; &lt;line&gt;</code></h3>
+          <p>Edit a specific line in the file.</p>
+        </div>
+        <div class="command">
+          <h3>delete <code>&lt;filename&gt;</code></h3>
+          <p>Delete a specified file.</p>
+        </div>
+        <div class="command">
+          <h3>run</h3>
+          <p>Run your code quickly without exiting Txtmax with compilers and interpreters like GCC, Clang, Python, Node.js.</p>
+        </div>
+        <div class="command">
+          <h3>files</h3>
+          <p>List all files in the current directory.</p>
+        </div>
+        <div class="command">
+          <h3>search <code>&lt;filename&gt;</code></h3>
+          <p>Search for files by name.</p>
+        </div>
+        <div class="command">
+          <h3>info <code>&lt;filename&gt;</code></h3>
+          <p>Get detailed information about the file (name, extension, creation time, modification time, version control).</p>
+        </div>
+        <div class="command">
+          <h3>examples</h3>
+          <p>Show "Hello, World!" examples in multiple languages.</p>
+        </div>
+        <div class="command">
+          <h3>sql</h3>
+          <p>Show example SQL queries for databases like PostgreSQL and NoSQL.</p>
+        </div>
+        <div class="command">
+          <h3>packages</h3>
+          <p>Install packages via package managers (pip, npm, apt, etc.).</p>
+        </div>
+        <div class="command">
+          <h3>api</h3>
+          <p>Test Restful APIs data directly in the editor using cURL.</p>
+        </div>
+        <div class="command">
+          <h3>exit</h3>
+          <p>Exit the Txtmax editor.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="manual" class="section">
+      <h2>Comprehensive Manual</h2>
+      <div class="manual-content">
+        <h3>Getting Started</h3>
+        <p>Txtmax is an advanced text editor that supports various file management features and coding tasks, including syntax highlighting, version control, and much more.</p>
+        
+        <h3>File Management</h3>
+        <ul>
+          <li><strong>Create Files:</strong> Use <code>create &lt;filename&gt;</code> to create a new file.</li>
+          <li><strong>View Files:</strong> Use <code>view &lt;filename&gt;</code> to view a file with syntax highlighting.</li>
+          <li><strong>Edit Files:</strong> Use <code>edit &lt;filename&gt; &lt;line&gt;</code> to edit a specific line.</li>
+          <li><strong>Delete Files:</strong> Use <code>delete &lt;filename&gt;</code> to delete a file.</li>
+        </ul>
+        
+        <h3>Advanced Features</h3>
+        <ul>
+          <li>Git version control integration for managing project history.</li>
+          <li>Run code directly without leaving the editor with built-in support for compilers and interpreters.</li>
+          <li>Manage packages easily through built-in package management support (npm, pip, apt, etc.).</li>
+          <li>Test Restful APIs directly within Txtmax using the <code>api</code> command.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="download" class="section">
+      <h2>Download Txtmax</h2>
+      <p>To get started with Txtmax, follow the installation instructions below:</p>
+      <div class="code-block">
+        <pre><code>git clone https://github.com/Calestial2/Txtmax
+cd Txtmax
+cd versions
+gcc txtmax10.c -o txtmax10
+./txtmax10</code></pre>
+      </div>
+      <p>Stay tuned for future updates</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Txtmax. All rights reserved. | <a href="mailto:calestialashley@gmail.com">Contact</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
